@@ -4,9 +4,7 @@ import React from 'react';
 function LeftSide() {
     var leftPosition = {
         color: 'red',
-        gridColumnStart: '1',
-        gridColumnEnd: '3',
-        border: '1px black solid',
+        // gridColumn: '1/6'
   
       }
 

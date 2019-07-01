@@ -1,17 +1,28 @@
 import React from 'react';
-
+import RightContent from './RightContent';
+import Details from './Details';
 
 function RightSide() {
     var rightPosition = {
-        gridColumnStart: '3',
-        gridColumnEnd: '4',
-        border: '1px black solid'
+        // gridColumn: '7/8',
+
     }
 
     return (
-
         <div style={rightPosition}>
-            <p>Placeholder for right content</p>
+            <RightContent
+            title = "COMMUNITY DETAILS"
+            element = <Details/> /> 
+            <br/>
+            <RightContent
+            title = "R/REACTJS RULES"/>
+            <br/>
+            <RightContent
+            title = "SIDEBAR"/>
+            <br/>
+            <RightContent
+            title = "MODERATORS"/>
+            <br/>
         </div>
     )
 }

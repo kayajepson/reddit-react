@@ -6,12 +6,32 @@ import RightSide from './RightSide';
 function MainContainer() {
     var myMainContainerStyles = {
         display: 'grid',
+        gridTemplateColumns: '6fr 2fr',
+        gridTemplateArea: 'left right',
+        backgroundColor: '#373c3f',
+        paddingRight: '5%',
+        paddingLeft: '2%',
+        paddingTop: '2%',
+        height: '100vh',
       }
+
+    //   .container {
+    //     display: grid;
+      
+    //     grid-template-columns: 1fr 1fr 1fr 1fr;
+    //     grid-template-rows: 100px 200px 100px;
+      
+    //     grid-template-areas:
+    //           "head head2 . side"
+    //           "main main2 . side"
+    //           "footer footer footer footer";
+    //   }
+      
 
     return (
       <div style={myMainContainerStyles}>
-        <LeftSide />
-        <RightSide />
+        <LeftSide className='left'/>
+        <RightSide className='right'/>
       </div>
     )
 }
